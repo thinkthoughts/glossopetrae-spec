@@ -778,7 +778,7 @@ function sanitize(s) {
 
 <p><strong>The legitimate costs of that choice.</strong> None of the above makes the posture clean. Vendor security teams found out about specifically-named exposure of their flagships from a public tweet rather than a pre-notification ping, which is a real cost to those teams and a real cost to the broader defender-coordination norms this community is still building. A short embargo — 24 to 72 hours, paired with a heads-up email to the named vendors' security contacts — would have given those teams a window to stage Layer-1 mitigations in their managed pipelines before the harnesses went public, at essentially no benefit to attackers (the primitives are, again, already public; the map is the marginal value, and 24–72h of map-delay does not change the threat surface). The decision to skip that embargo is a chosen trade-off in favor of speed-of-disclosure to defenders-at-large and against coordination-cost with named vendors, and reasonable people working in this space will land on the other side of that trade. This paragraph exists so the trade-off is on the record rather than glossed.</p>
 
-<p><strong>Forward commitment.</strong> Future GLOSSOPETRAE drops will default to vendor pre-notification with a 24–72h embargo window for any finding that names specific deployed flagships in specific monitoring configurations — or will document an explicit, reasoned decision to deviate from that default, rather than treating "self-published technical report" as a standing waiver. The §7.5 contact path is open for any vendor that wants to engage retroactively on this work — reproduce a cell, discuss a blind spot, coordinate Layer-1 deployment guidance — and the author will publicly cite shipped vendor patches that close categories named in §2 or §4 as and when they ship.</p>
+<p><strong>Forward commitment.</strong> Future GLOSSOPETRAE drops will default to vendor pre-notification with a 24–72h embargo window for any finding that names specific deployed flagships in specific monitoring configurations — or will document an explicit, reasoned decision to deviate from that default, rather than treating "self-published technical report" as a standing waiver. The §7.4 contact path is open for any vendor that wants to engage retroactively on this work — reproduce a cell, discuss a blind spot, coordinate Layer-1 deployment guidance — and the author will publicly cite shipped vendor patches that close categories named in §2 or §4 as and when they ship.</p>
 
 <p><strong>Release hygiene.</strong> The public release excludes <code></em>_MOCK<em></code> fixtures and known-broken runs (v3 GPT non-echo, retained privately as audit artifact). API keys live in a gitignored <code>.env.local</code>.</p>
 
@@ -786,19 +786,15 @@ function sanitize(s) {
 
 <p>Raw result JSONs for every experimental cell in this paper (the survival sweeps, the n=30 channel grid, the n=15 detection grid, the n=150 Venice replication, the multi-sender cells, and the factorial cells), together with the harnesses (<code>e3s_detection.mjs</code>, <code>e3s_stego_channel.mjs</code>, <code>e3s_factorial_instruction.mjs</code>, <code>tokenizer_survival_v2.mjs</code>, and <code>lib/client.mjs</code>), ship in the GLOSSOPETRAE public release at the same Git tag as this report. The release archive is committed to a long-term-stable identifier (Zenodo DOI, to be minted at the same tag) for citation. The commit hash from which the reported numbers were derived is recorded in Appendix E. The release excludes <code></em>_MOCK<em></code> fixtures and the v3 GPT broken run (retained privately as an audit artifact, §2.4). See §6.5 for the adversarial-audit methodology that produced the published numbers.</p>
 
-<h2>7.2 Conflict of Interest</h2>
-
-<p>The author publishes pseudonymously as @elder_plinius and has publicly disclosed prior or current red-team engagements with several frontier AI vendors, including Anthropic and OpenAI. <strong>No vendor funded, reviewed, directed, or had pre-publication access to this work</strong>, and the author holds no equity in any vendor whose models appear in the survey. The choice to publish a non-Anthropic-favorable finding (Anthropic family most tokenizer-blind; §2.5) was not influenced by any vendor relationship. To the extent any vendor relationship constitutes apparent conflict, it is noted here so readers can weight the result accordingly.</p>
-
-<h2>7.3 Funding</h2>
+<h2>7.2 Funding</h2>
 
 <p>This work received no external funding; all API costs (OpenRouter and Venice) were paid by the author.</p>
 
-<h2>7.4 Acknowledgments</h2>
+<h2>7.3 Acknowledgments</h2>
 
 <p>The §6.5 adversarial audit and the validated-critique pass that produced this version of the report were conducted with LLM-based reviewers (multi-model, including current-frontier Claude, GPT, and Gemini snapshots) instructed to refute rather than confirm claims and to re-derive every number from raw artifacts. Specific reviewer models and their per-finding contributions are recorded in the release archive's <code>VALIDATION.md</code>.</p>
 
-<h2>7.5 Notes for Vendors and Future Researchers</h2>
+<h2>7.4 Notes for Vendors and Future Researchers</h2>
 
 <p>For retroactive engagement (reproduce a cell, discuss a blind spot, coordinate Layer-1 sanitization), all needed materials are in the public release:</p>
 

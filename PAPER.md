@@ -644,7 +644,7 @@ No human subjects; ethical considerations concern release-time harm to downstrea
 
 **The legitimate costs of that choice.** None of the above makes the posture clean. Vendor security teams found out about specifically-named exposure of their flagships from a public tweet rather than a pre-notification ping, which is a real cost to those teams and a real cost to the broader defender-coordination norms this community is still building. A short embargo — 24 to 72 hours, paired with a heads-up email to the named vendors' security contacts — would have given those teams a window to stage Layer-1 mitigations in their managed pipelines before the harnesses went public, at essentially no benefit to attackers (the primitives are, again, already public; the map is the marginal value, and 24–72h of map-delay does not change the threat surface). The decision to skip that embargo is a chosen trade-off in favor of speed-of-disclosure to defenders-at-large and against coordination-cost with named vendors, and reasonable people working in this space will land on the other side of that trade. This paragraph exists so the trade-off is on the record rather than glossed.
 
-**Forward commitment.** Future GLOSSOPETRAE drops will default to vendor pre-notification with a 24–72h embargo window for any finding that names specific deployed flagships in specific monitoring configurations — or will document an explicit, reasoned decision to deviate from that default, rather than treating "self-published technical report" as a standing waiver. The §7.5 contact path is open for any vendor that wants to engage retroactively on this work — reproduce a cell, discuss a blind spot, coordinate Layer-1 deployment guidance — and the author will publicly cite shipped vendor patches that close categories named in §2 or §4 as and when they ship.
+**Forward commitment.** Future GLOSSOPETRAE drops will default to vendor pre-notification with a 24–72h embargo window for any finding that names specific deployed flagships in specific monitoring configurations — or will document an explicit, reasoned decision to deviate from that default, rather than treating "self-published technical report" as a standing waiver. The §7.4 contact path is open for any vendor that wants to engage retroactively on this work — reproduce a cell, discuss a blind spot, coordinate Layer-1 deployment guidance — and the author will publicly cite shipped vendor patches that close categories named in §2 or §4 as and when they ship.
 
 **Release hygiene.** The public release excludes `*_MOCK*` fixtures and known-broken runs (v3 GPT non-echo, retained privately as audit artifact). API keys live in a gitignored `.env.local`.
 
@@ -652,19 +652,15 @@ No human subjects; ethical considerations concern release-time harm to downstrea
 
 Raw result JSONs for every experimental cell in this paper (the survival sweeps, the n=30 channel grid, the n=15 detection grid, the n=150 Venice replication, the multi-sender cells, and the factorial cells), together with the harnesses (`e3s_detection.mjs`, `e3s_stego_channel.mjs`, `e3s_factorial_instruction.mjs`, `tokenizer_survival_v2.mjs`, and `lib/client.mjs`), ship in the GLOSSOPETRAE public release at the same Git tag as this report. The release archive is committed to a long-term-stable identifier (Zenodo DOI, to be minted at the same tag) for citation. The commit hash from which the reported numbers were derived is recorded in Appendix E. The release excludes `*_MOCK*` fixtures and the v3 GPT broken run (retained privately, §2.4).
 
-## 7.2 Conflict of Interest
-
-The author publishes pseudonymously as @elder_plinius and has publicly disclosed prior or current red-team engagements with several frontier AI vendors, including Anthropic and OpenAI. **No vendor funded, reviewed, directed, or had pre-publication access to this work**, and the author holds no equity in any vendor whose models appear in the survey. The choice to publish a non-Anthropic-favorable finding (Anthropic family most tokenizer-blind; §2.5) was not influenced by any vendor relationship. To the extent any vendor relationship constitutes apparent conflict, it is noted here so readers can weight the result accordingly.
-
-## 7.3 Funding
+## 7.2 Funding
 
 This work received no external funding; all API costs (OpenRouter and Venice) were paid by the author.
 
-## 7.4 Acknowledgments
+## 7.3 Acknowledgments
 
 Multi-model LLM-based reviewers (Claude, GPT, and Gemini snapshots) were used for validated-critique passes during preparation. Specific reviewer models and their per-finding contributions are recorded in the release archive's `VALIDATION.md`.
 
-## 7.5 Notes for Vendors and Future Researchers
+## 7.4 Notes for Vendors and Future Researchers
 
 For retroactive engagement (reproduce a cell, discuss a blind spot, coordinate Layer-1 sanitization), all needed materials are in the public release:
 
