@@ -52,12 +52,12 @@ The central question is:
 
 | Notebook | Focus                               | Colab                                                                                                                                       |
 | -------- | ----------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------- |
-| 00       | Context and system overview         | <a href="https://colab.research.google.com/github/thinkthoughts/glossopetrae-spec/blob/main/notebooks/00_context.ipynb">📓</a>              |
-| 07       | What is specified?                  | <a href="https://colab.research.google.com/github/thinkthoughts/glossopetrae-spec/blob/main/notebooks/07_specifications.ipynb">📓</a>       |
-| 13       | What survives translation?          | <a href="https://colab.research.google.com/github/thinkthoughts/glossopetrae-spec/blob/main/notebooks/13_translation.ipynb">📓</a>          |
-| 17       | What survives script change?        | <a href="https://colab.research.google.com/github/thinkthoughts/glossopetrae-spec/blob/main/notebooks/17_writing_systems.ipynb">📓</a>      |
-| 23       | What survives language evolution?   | <a href="https://colab.research.google.com/github/thinkthoughts/glossopetrae-spec/blob/main/notebooks/23_descendant_languages.ipynb">📓</a> |
-| 29       | What survives every transformation? | <a href="https://colab.research.google.com/github/thinkthoughts/glossopetrae-spec/blob/main/notebooks/29_invariants.ipynb">📓</a>           |
+| 00       | Context and system overview         | <a href="https://colab.research.google.com/github/thinkthoughts/glossopetrae-spec/blob/main/SPEC/notebooks/00_context.ipynb">📓</a>              |
+| 07       | What is specified?                  | <a href="https://colab.research.google.com/github/thinkthoughts/glossopetrae-spec/blob/main/SPEC/notebooks/07_specifications.ipynb">📓</a>       |
+| 13       | What survives translation?          | <a href="https://colab.research.google.com/github/thinkthoughts/glossopetrae-spec/blob/main/SPEC/notebooks/13_translation.ipynb">📓</a>          |
+| 17       | What survives script change?        | <a href="https://colab.research.google.com/github/thinkthoughts/glossopetrae-spec/blob/main/SPEC/notebooks/17_writing_systems.ipynb">📓</a>      |
+| 23       | What survives language evolution?   | <a href="https://colab.research.google.com/github/thinkthoughts/glossopetrae-spec/blob/main/SPEC/notebooks/23_descendant_languages.ipynb">📓</a> |
+| 29       | What survives every transformation? | <a href="https://colab.research.google.com/github/thinkthoughts/glossopetrae-spec/blob/main/SPCE/notebooks/29_invariants.ipynb">📓</a>           |
 
 ---
 
