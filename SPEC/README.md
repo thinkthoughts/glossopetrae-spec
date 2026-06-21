@@ -57,7 +57,7 @@ The central question is:
 | 13       | What survives translation?          | <a href="https://colab.research.google.com/github/thinkthoughts/glossopetrae-spec/blob/main/SPEC/notebooks/13_translation.ipynb">📓</a>          |
 | 17       | What survives script change?        | <a href="https://colab.research.google.com/github/thinkthoughts/glossopetrae-spec/blob/main/SPEC/notebooks/17_writing_systems.ipynb">📓</a>      |
 | 23       | What survives language evolution?   | <a href="https://colab.research.google.com/github/thinkthoughts/glossopetrae-spec/blob/main/SPEC/notebooks/23_descendant_languages.ipynb">📓</a> |
-| 29       | What survives every transformation? | <a href="https://colab.research.google.com/github/thinkthoughts/glossopetrae-spec/blob/main/SPCE/notebooks/29_invariants.ipynb">📓</a>           |
+| 29       | What survives every transformation? | <a href="https://colab.research.google.com/github/thinkthoughts/glossopetrae-spec/blob/main/SPEC/notebooks/29_invariants.ipynb">📓</a>           |
 
 ---
 
